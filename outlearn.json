@@ -1,0 +1,26 @@
+{
+  "olpVersion" : "0.5",
+
+  "paths" : [
+    {
+      "name" : "my-outlearn-path",
+      "title" : "My First Outlearn Path",
+      "description" : "Fastest Way to Publish a Path",
+      "privacy" : "public",
+      "pages" : [
+        {"page" : "./pages/welcome.md"},
+        {"module" : "my-outlearn-module"},
+        {"page" : "./pages/closing.md"}
+      ]
+    }
+  ],
+
+  "modules" : [
+    {
+      "olm" : "./modules/my-outlearn-module.md"
+    }
+  ],
+
+  "assets" : [
+  ]
+}
