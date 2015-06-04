@@ -106,7 +106,7 @@ To help make sense of the Modules in your Path, you can put in interstitial Page
 
 ### Outlearn Uses Markdown
 
-We wanted to have an authoring experience that integrates seamlessly with GitHub and is easy as well as expressive. We think Markdown hits a great balance between those goals. You can read the official [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax) for more details. Outlearn also supports all the extensions of [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you already have your content in Markdown, importing it to Outlearn is a breeze.
+We wanted to have an authoring experience that integrates seamlessly with GitHub and is easy as well as expressive. We think Markdown strikes a great balance between those goals. You can read the official [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax) for more details. Outlearn also supports all the extensions of [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/). If you already have your content in Markdown, importing it to Outlearn is a breeze.
 
 ### Your First Content Edits
 
