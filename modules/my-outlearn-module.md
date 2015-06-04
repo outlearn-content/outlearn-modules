@@ -32,6 +32,8 @@ If you want to enrich your content with more features, this sample module has a 
 
 The simplest way to include an image is using Markdown syntax.
 
+![sea](https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/sea.jpg)
+
 
 
 <!-- @section -->
