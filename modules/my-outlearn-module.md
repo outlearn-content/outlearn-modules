@@ -26,6 +26,9 @@ GitHub-flavored markdown will work just fine, and you can preview your files in 
 
 If you want to enrich your content with more features, this sample module has a few examples, including the Unfurled Link above, and the interactive features described in the next section.
 
+> Block quotes get special styling on Outlearn. They turn into highlight boxes.
+
+
 <!-- @section -->
 
 # Images and videos
