@@ -166,7 +166,7 @@ Outlearn supports the regular Markdown syntax for including images.
 You can add videos with the following annotations:
 
 ```markdown
-< !-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/61887298" -->
+< !-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/42744689" -->
 
 < !-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
 ```
