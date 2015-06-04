@@ -163,14 +163,6 @@ The body of your `outlearn.json` will now look like this:
 
 Outlearn supports the regular Markdown syntax for including images.
 
- <!-- However, you will get nicer rendering and better progress tracking using our enriched asset format. The Outlearn image annotation looks like this:
-
-```markdown
-
-< !-- @asset, type: 'image/jpeg', title: 'Architecture Diagram', location: 'http://ad009cdnb.archdaily.net/wp-content/uploads/2011/05/1304980266-ad30-circulation-diagram.jpg' -- >
-
-``` -->
-
 You can add videos with the following annotations:
 
 ```markdown
@@ -179,7 +171,7 @@ You can add videos with the following annotations:
 < !-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
 ```
 
-<!-- < !-- @asset, type: 'video/mp4', title: 'Watch the Video', location: 'http://www.example.com/training/video1.mp4' -- > -->
+
 
 <!-- @section -->
 
