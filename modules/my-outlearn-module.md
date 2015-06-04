@@ -28,6 +28,18 @@ If you want to enrich your content with more features, this sample module has a 
 
 <!-- @section -->
 
+# Images and videos
+
+The simplest way to include an image is using Markdown syntax.
+
+![sea](https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/sea.jpg)
+
+You can also use the Outlearn asset syntax.
+
+<!-- @asset, "name": "stream" -->
+
+<!-- @section -->
+
 # Let's make our module Fancy
 
 If you want to get your audience to practice what you preach, give them a task.

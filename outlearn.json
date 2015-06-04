@@ -22,5 +22,10 @@
   ],
 
   "assets" : [
+    {
+      "name" : "stream",
+      "contentType" : "image/jpeg",
+      "location" : "assets/stream.jpg"
+    }
   ]
 }
