@@ -37,7 +37,6 @@ You can include images using Markdown syntax.
 
 ![sea](https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/sea.jpg)
 
-<!-- @asset, "name": "stream" -->
 
 You can embed hosted videos in your paths using Outlearn @asset syntax. Here is a Vimeo video:
 
