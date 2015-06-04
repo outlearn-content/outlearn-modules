@@ -161,25 +161,25 @@ The body of your `outlearn.json` will now look like this:
 
 ### Including Images and Videos
 
-Outlearn supports the regular Markdown syntax for including images. However, you will get nicer rendering and better progress tracking using our enriched asset format. The Outlearn image annotation looks like this:
+Outlearn supports the regular Markdown syntax for including images.
+
+ <!-- However, you will get nicer rendering and better progress tracking using our enriched asset format. The Outlearn image annotation looks like this:
 
 ```markdown
 
-< !-- @asset, type: 'image/jpeg', title: 'Architecture Diagram', location: 'http://ad009cdnb.archdaily.net/wp-content/uploads/2011/05/1304980266-ad30-circulation-diagram.jpg' -->
+< !-- @asset, type: 'image/jpeg', title: 'Architecture Diagram', location: 'http://ad009cdnb.archdaily.net/wp-content/uploads/2011/05/1304980266-ad30-circulation-diagram.jpg' -- >
 
-```
+``` -->
 
 You can add videos with the following annotations:
 
 ```markdown
+< !-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/61887298" -->
 
-< !-- @asset, type: 'video/vimeo', title: 'Watch the Video', location: 'https://vimeo.com/61887298' -->
-
-< !-- @asset, type: 'video/youtube', title: 'Watch the Video', location: 'https://www.youtube.com/watch?v=CmjeCchGRQo' -->
-
-< !-- @asset, type: 'video/mp4', title: 'Watch the Video', location: 'http://www.example.com/training/video1.mp4' -->
-
+< !-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
 ```
+
+<!-- < !-- @asset, type: 'video/mp4', title: 'Watch the Video', location: 'http://www.example.com/training/video1.mp4' -- > -->
 
 <!-- @section -->
 
@@ -215,13 +215,13 @@ Nothing kills learner motivation like hours of reading and watching videos witho
 To add a task:
 
 ```markdown
-< !-- @todo, "task" : "Run the above code example on your own machine."-->
+< !-- @task, "text" : "Run the above code example on your own machine."-->
 ```
 
 If you also want to add a deliverable:
 
 ```markdown
-< !-- @todo, "deliverable" : true, "task" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request."-->
+< !-- @task, "hasDeliverable" : true, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request."-->
 ```
 
 For an external link that gets unfurled inside the platform:
