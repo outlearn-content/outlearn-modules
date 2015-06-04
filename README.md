@@ -162,7 +162,6 @@ The body of your `outlearn.json` will now look like this:
 ### Including Images and Videos
 
 Outlearn supports the regular Markdown syntax for including images.
-
 You can add videos with the following annotations:
 
 ```markdown
