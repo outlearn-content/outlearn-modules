@@ -5,7 +5,7 @@
 "title" : "Outlearn Hello World",
 "description" : "Get Started with Your Path in 5 Minutes",
 "homepage" : "https://github.com/outlearn-content/outlearn-modules",
-"coverImage" : "http://www.publicdomainpictures.net/pictures/70000/velka/abstract-party-lights.jpg",
+"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg",
 "freshnessDate" : 2015-05-18,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
@@ -15,20 +15,49 @@
 
 <!-- @section -->
 
-## Create Your First Path
+## Create an Outlearn Account
 
 ### Viewing This on GitHub?
 
 If you are viewing this on GitHub and want to get the full experience, check out [Publishing Great Learning Content](https://pilot.outlearn.com/learn/outlearn/outlearn-publishing) on Outlearn.
 
+### Join With GitHub
 
-### Fork the Repo
+You can unleash the power of publishing on Outlearn by joining with your GitHub account. [Click here to create an Outlearn account](https://pilot.outlearn.com/auth/join). Click "Join With GitHub" so that Outlearn can access and publish your content. GitHub will ask for your permission using a popup like the one below.
 
-We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to fork this repo. If you need a refresher on forking, check out GitHub's guide on [forking projects](https://guides.github.com/activities/forking/). They also have other handy [guides](https://guides.github.com).
+![GitHub sign-in popup](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/authorize.png)
 
-<!-- @task, "text" : "Fork the outlearn-modules repository."-->
+If you have already signed up, you can [go to settings](https://pilot.outlearn.com/settings) and Link GitHub with your Outlearn account.
 
-Once you have forked the repository, open up `outlearn.json` found at the root of the repo. Update the following Path metadata fields in the file:
+<!-- @task, "text" : "Create an Outlearn account and then mark this task as completed."-->
+
+
+<!-- @section -->
+
+## Duplicate and Edit the Template Repo
+
+We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to duplicate this repo. Start by creating your own repo where you want to copy the contents of the template. If you need a refresher, check out GitHub's guide on [creating a new repository](https://help.github.com/articles/creating-a-new-repository/). They also have other handy [guides](https://guides.github.com).
+
+<!-- @task, "text" : "Create a new repo for your outlearn content."-->
+
+Next, you need to [perform a bare-clone and a mirror-push](https://help.github.com/articles/duplicating-a-repository/). The instructions below assume you have created a new repo called `exampleuser/new-repository`. Type these commands at the command line:
+
+```bash
+$ git clone --bare https://github.com/outlearn-content/outlearn-modules.git
+# Make a bare clone of the repository
+
+$ cd outlearn-modules.git
+$ git push --mirror https://github.com/exampleuser/new-repository.git
+# Mirror-push to the new repository
+
+$ cd ..
+$ rm -rf outlearn-modules.git
+# Remove our temporary local repository
+```
+
+<!-- @task, "text" : "Duplicate the outlearn-modules repository."-->
+
+Once you have duplicated the repository, open up `outlearn.json` found at the root of your newly created duplicate repo. Update the following Path metadata fields in the file:
 
 
 | Field | Description                                            |
@@ -59,24 +88,16 @@ Your relevant part of your file should look like this:
 
 <!-- @section -->
 
-## Create an Outlearn Account and Publish Your Path
+## Publish Your Path
 
 The best way for you to test Path creation is to see your changes in real time on Outlearn. This section will show you how to do that.
-
-[Click here to create an Outlearn account](https://pilot.outlearn.com/auth/join)
-using your GitHub credentials. Click "Join With GitHub" so that Outlearn can access and publish your GitHub content. GitHub will ask for your permission using a popup like the one below.
-
-![GitHub sign-in popup](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/authorize.png)
-
-<!-- @task, "text" : "Create an Outlearn account."-->
 
 Choose [Import Content](https://pilot.outlearn.com/import/github)
 from the menu in the top right corner under the user icon.
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import.png)
 
-Add a GitHub Repository and choose "outlearn-modules"
-as the repository. Modify the default nickname if you want to and import the repository.
+Add a GitHub Repository and choose your newly created repo. Modify the default nickname if you want to and import the repository.
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/choose-repo.png)
 
@@ -101,7 +122,7 @@ Congratulations!
 
 Now that you've laid out what your Path is all about, it's time to get some content in it. Paths are made up of two basic components: _Pages_ and _Modules_. The Modules are the building blocks of a Path. You might write them all yourself or you can include Modules written by others. An ideal Module provides good stand-alone learning value, making it a good candidate to be reused effectively in many Paths.
 
-To help make sense of the Modules in your Path, you can put in interstitial Pages. Pages are the glue that holds the Modules together. They let you add in more of your own personality and context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and relate the content to concepts your specific audience already understands.
+To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality and context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and relate the content to concepts your specific audience already understands.
 
 
 ### Outlearn Uses Markdown
@@ -151,9 +172,7 @@ The body of your `outlearn.json` will now look like this:
 ],
 
 "modules" : [
-  {
-    "olm" : "./modules/awesome-first-module.md"
-  }
+  {"olm" : "./modules/awesome-first-module.md"}
 ],
 ```
 
@@ -230,7 +249,7 @@ For an external link that gets unfurled inside the platform:
 Each Module in the Path can have a cover image that's a visual representation of the Path or Module.  Really it's just there to make your content stand out as more attractive, we'll provide a default pattern if you don't add a custom image. You add them in the header with a line:
 
 ```markdown
-"coverImage" : "http://www.publicdomainpictures.net/pictures/70000/velka/abstract-party-lights.jpg",
+"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg",
 ```
 
 <!-- @section, "title": "Wrapping Up" -->
@@ -238,4 +257,4 @@ Each Module in the Path can have a cover image that's a visual representation of
 A couple items to finish up:
 
 * You can delete or repurpose this `README.md` file once you're done with it.
-* Feel free to use the forked copy of outlearn-modules as a basis for all your content, or author your own learning repositories from scratch, GitHub import is supported for all compatible repos.
+* Feel free to use the duplicated copy of outlearn-modules as a basis for all your content, or author your own learning repositories from scratch, GitHub import is supported for all compatible repos.
