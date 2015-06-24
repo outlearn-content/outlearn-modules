@@ -36,18 +36,16 @@ If you have already signed up, you can [go to settings](https://pilot.outlearn.c
 
 ## Duplicate and Edit the Template Repo
 
-We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to duplicate this repo. Start by creating your own repo where you want to copy the contents of the template. If you need a refresher, check out GitHub's guide on [creating a new repository](https://help.github.com/articles/creating-a-new-repository/). They also have other handy [guides](https://guides.github.com).
+We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to duplicate this repo. If you are just trying things out and don't mind having your repo public, you can [fork](https://guides.github.com/activities/forking/) outlearn-modules. In that case, you can skip the steps in the code block below.
 
-<!-- @task, "text" : "Create a new repo for your outlearn content."-->
-
-Next, you need to [perform a bare-clone and a mirror-push](https://help.github.com/articles/duplicating-a-repository/). The instructions below assume you have created a new repo called `exampleuser/new-repository`. Type these commands at the command line:
+If you want to use a private repo or want to change the repo name, [create a new repo](https://help.github.com/articles/creating-a-new-repository/) where you want to copy the contents of the template. Next, you need to perform a bare-clone and a mirror-push. The instructions below assume you have created a new repo called `exampleuser/new-repository` and use an `ssh` connection. You can also [clone using `https`](https://help.github.com/articles/duplicating-a-repository/). For `ssh`, type these commands at the command line:
 
 ```bash
-$ git clone --bare https://github.com/outlearn-content/outlearn-modules.git
+$ git clone --bare git@github.com:outlearn-content/outlearn-modules.git
 # Make a bare clone of the repository
 
 $ cd outlearn-modules.git
-git push --mirror ssh://git@github.com/exampleuser/new-repository.git
+git push --mirror git@github.com:exampleuser/new-repository.git
 # Mirror-push to the new repository
 
 $ cd ..
@@ -55,7 +53,7 @@ $ rm -rf outlearn-modules.git
 # Remove our temporary local repository
 ```
 
-<!-- @task, "text" : "Duplicate the outlearn-modules repository."-->
+<!-- @task, "text" : "Create a duplicate the outlearn-modules repository, either by forking or by bare-cloning."-->
 
 Once you have duplicated the repository, open up `outlearn.json` found at the root of your newly created duplicate repo. Now update the following Path metadata fields in the file:
 
