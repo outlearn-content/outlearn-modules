@@ -47,7 +47,7 @@ $ git clone --bare https://github.com/outlearn-content/outlearn-modules.git
 # Make a bare clone of the repository
 
 $ cd outlearn-modules.git
-$ git push --mirror https://github.com/exampleuser/new-repository.git
+git push --mirror ssh://git@github.com/exampleuser/new-repository.git
 # Mirror-push to the new repository
 
 $ cd ..
@@ -57,7 +57,7 @@ $ rm -rf outlearn-modules.git
 
 <!-- @task, "text" : "Duplicate the outlearn-modules repository."-->
 
-Once you have duplicated the repository, open up `outlearn.json` found at the root of your newly created duplicate repo. Update the following Path metadata fields in the file:
+Once you have duplicated the repository, open up `outlearn.json` found at the root of your newly created duplicate repo. Now update the following Path metadata fields in the file:
 
 
 | Field | Description                                            |
@@ -66,7 +66,7 @@ Once you have duplicated the repository, open up `outlearn.json` found at the ro
 | title | shown at the top of Path cards                         |
 | description | shown on the Path card as additional information |
 
-Your relevant part of your file should look like this:
+The relevant part of your file should now look like this:
 
 ```json
 "paths" : [
@@ -106,8 +106,8 @@ Add a GitHub Repository and choose your newly created repo. Modify the default n
 You should now see the nickname of your integration
 under your GitHub Integrations. Click on the name,
 then click on the green check under Import History. You
-will see the imported Paths and Modules. Click on the
-Path and you will see your first very own Outlearn Path.
+will see the imported Paths and Modules. Now click on the
+Path and you will see your very first Outlearn Path, in all its glory.
 Congratulations!
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import-history.png)
@@ -120,9 +120,11 @@ Congratulations!
 
 ### Pages and Modules
 
-Now that you've laid out what your Path is all about, it's time to get some content in it. Paths are made up of two basic components: _Pages_ and _Modules_. The Modules are the building blocks of a Path. You might write them all yourself or you can include Modules written by others. An ideal Module provides good stand-alone learning value, making it a good candidate to be reused effectively in many Paths.
+Now that you've laid out what your Path is all about, it's time to get some content in it. Paths are made up of two basic components: _Pages_ and _Modules_. The Modules are the building blocks of a Path. You might write them all yourself or you can include Modules written by others.
 
-To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality and context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and relate the content to concepts your specific audience already understands.
+An ideal Module provides good stand-alone learning value, making it a good candidate to be reused effectively in many Paths. As you create your Module, we recommend that you avoid referencing other Modules within the Module content. If you do so, you run the risk of confusing learners who might find themselves in a learning Path that does not includes the referenced Module.
+
+To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality as a curator of modules created by others and they add context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and relate the content to concepts your specific audience already understands. Use pages whenever a little expert context and commentary might be helpful.
 
 
 ### Outlearn Uses Markdown
@@ -224,7 +226,9 @@ This can be especially helpful when you just want to add sections quickly to an 
 
 ### Add Tasks, Links
 
-Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice. The easiest way to create meaningful interactions with the learners on Outlearn is to add tasks, some of which may contain deliverables. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system." With deliverables, you get even more flexibility. For example, you can ask learners to "Fork the project repo on GitHub, add in your function and send a pull request to the original repo. Paste the URL to the pull request below." Path authors and organization admins can see which tasks have been done and what learners have submitted. They can then organize further activities such as code reviews.
+Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice. The easiest way to create meaningful interactions with the learners on Outlearn is to add tasks, some of which may contain deliverables. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
+
+You can optionally define deliverables that are to be submitted as part of task completion. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then paste the the pull request URL below." Path authors and organization admins can see which tasks have been done and the contents of the deliverables that learners have submitted. They can then organize further activities such as code reviews.
 
 To add a task:
 
@@ -232,7 +236,7 @@ To add a task:
 < !-- @task, "text" : "Run the above code example on your own machine."-->
 ```
 
-If you also want to add a deliverable:
+If you also want to add a task deliverable:
 
 ```markdown
 < !-- @task, "hasDeliverable" : true, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request."-->
