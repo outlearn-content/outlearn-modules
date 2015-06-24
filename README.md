@@ -38,7 +38,7 @@ If you have already signed up, you can [go to settings](https://pilot.outlearn.c
 
 We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to duplicate this repo. If you are just trying things out and don't mind having your repo public, you can [fork](https://guides.github.com/activities/forking/) outlearn-modules. In that case, you can skip the steps in the code block below.
 
-If you want to use a private repo or want to change the repo name, [create a new repo](https://help.github.com/articles/creating-a-new-repository/) where you want to copy the contents of the template. Next, you need to perform a bare-clone and a mirror-push. The instructions below assume you have created a new repo called `exampleuser/new-repository` and use an `ssh` connection. You can also [clone using `https`](https://help.github.com/articles/duplicating-a-repository/). For `ssh`, type these commands at the command line:
+If you want to use a private repo or want to change the repo name, [create a new repo](https://help.github.com/articles/creating-a-new-repository/) where you want to copy the contents of the template. Next, you need to perform a bare-clone and a mirror-push. The instructions below assume you have created a new repo called `exampleuser/new-repository` and use an ssh connection. You can also [clone using https](https://help.github.com/articles/duplicating-a-repository/). To bare-clone using ssh, type these commands at the command line:
 
 ```bash
 $ git clone --bare git@github.com:outlearn-content/outlearn-modules.git
