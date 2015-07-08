@@ -246,9 +246,8 @@ For an external link that gets unfurled inside the platform:
 < !-- @link, "url" : "https://nodejs.org/", "text": "Install NodeJS" -->
 ```
 
-<!-- @section -->
 
-# Add Multiple Choice Exercises
+### Add Multiple Choice Exercises
 
 Simple multiple choice exercises include three components.  The _question_ (and any associated exposition), the _answers_, and an optional _hint_.
 
