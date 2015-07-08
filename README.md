@@ -6,7 +6,7 @@
 "description" : "Get Started with Your Path in 5 Minutes",
 "homepage" : "https://github.com/outlearn-content/outlearn-modules",
 "coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg",
-"freshnessDate" : 2015-05-18,
+"freshnessDate" : 2015-07-08,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
 "contact" : {"email" : "teppo@outlearn.com"}
