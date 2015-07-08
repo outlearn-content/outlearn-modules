@@ -246,6 +246,48 @@ For an external link that gets unfurled inside the platform:
 < !-- @link, "url" : "https://nodejs.org/", "text": "Install NodeJS" -->
 ```
 
+<!-- @section -->
+
+# Add Multiple Choice Exercises
+
+Simple multiple choice exercises include three components.  The _question_ (and any associated exposition), the _answers_, and an optional _hint_.
+
+In OLM, we can define multiple choice questions by putting them between a `@multipleChoice` and an `@end` annotation.
+
+```markdown
+
+< !-- @multipleChoice -->
+
+What is Node.js?
+
+- [ ] A package manager for JavaScript packages
+- [ ] A front-end framework for heavy-traffic web applications
+- [X] A platform for scalable network applications
+
+Remember that Node.js is more powerful than any individual use that it can be associated with.
+
+< !-- @end -->
+
+```
+
+Use `- [ ]` to start an incorrect answer, and `- [X]` to start a correct answer.
+The markdown above the answers is treated as the question, and the markdown below the answers
+is used as a 'hint' or 'explanation' that your learners can choose to reveal.
+
+When used in an Outlearn Module, the above example appears as follows:
+
+<!-- @multipleChoice -->
+
+What is Node.js?
+
+- [ ] A package manager for JavaScript packages
+- [ ] A front-end framework for heavy-traffic web applications
+- [X] A platform for scalable network applications
+
+Remember that Node.js is more powerful than any individual use that it can be associated with.
+
+<!-- @end -->
+
 ### Add Cover Images
 
 Each Module in the Path can have a cover image that's a visual representation of the Path or Module.  Really it's just there to make your content stand out as more attractive, we'll provide a default pattern if you don't add a custom image. You add them in the header with a line:

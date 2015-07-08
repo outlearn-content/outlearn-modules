@@ -70,4 +70,19 @@ And if they are making something worth sharing, why not let them share it with y
 
 <!-- @task, "hasDeliverable" : true, "text" : "Write and submit a haiku about your favorite compiler."-->
 
+Then go ahead and test how much they know.
+
+<!-- @multipleChoice -->
+
+You can add a matrix and its transpose together only if
+
+- [ ] The elements of the matrix are integers
+- [ ] The matrix has an inverse
+- [X] The matrix is a square matrix
+
+Remember that two matrices can be added if they have the same number of rows and columns.
+
+<!-- @end -->
+
+
 If you need more details on how to author, please visit the [Outlearn Publishing Guide](https://pilot.outlearn.com/learn/outlearn/outlearn-publishing), where you'll find more examples along with the full specification for the format used by this sample module.
