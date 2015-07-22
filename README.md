@@ -90,22 +90,21 @@ The relevant part of your file should now look like this:
 
 The best way for you to test Path creation is to see your changes in real time on Outlearn. This section will show you how to do that.
 
-Choose [Import Content](https://pilot.outlearn.com/import/github)
-from the menu in the top right corner under the user icon.
+Click on the user icon in the top right corner and choose [My Content](https://pilot.outlearn.com/my-content).
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import.png)
 
-Add a GitHub Repository and choose your newly created repo. Modify the default nickname if you want to and import the repository.
+Click Add Content Source and choose your newly created repo. You can choose Auto Import if you want all the changes in GitHub to be automatically reflected on Outlearn. If you would rather push new changes to Outlearn manually, choose Manual Import. You can modify the default nickname if you want to and import the repository.
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/choose-repo.png)
 
 <!-- @task, "text" : "Import your repository."-->
 
-You should now see the nickname of your integration
-under your GitHub Integrations. Click on the name,
-then click on the green check under Import History. You
+You should now see the nickname of your content source
+in the Content Sources section on the right hand side of the screen. Click on the name,
+then click on the green check on next to the latest import. You
 will see the imported Paths and Modules. Now click on the
-Path and you will see your very first Outlearn Path, in all its glory.
+Path and you will see your very first Outlearn Path in all its glory.
 Congratulations!
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import-history.png)
