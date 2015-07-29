@@ -8,7 +8,6 @@
 "freshnessDate" : 2015-07-08,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
-"organization" : "Outlearn Content Team",
 "contact" : {"email" : "teppo@outlearn.com"},
 "coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg"
 }
