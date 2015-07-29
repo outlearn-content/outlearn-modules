@@ -5,11 +5,12 @@
 "title" : "Outlearn Hello World",
 "description" : "Get Started with Your Path in 5 Minutes",
 "homepage" : "https://github.com/outlearn-content/outlearn-modules",
-"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg",
 "freshnessDate" : 2015-07-08,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
-"contact" : {"email" : "teppo@outlearn.com"}
+"organization" : "Outlearn Content Team",
+"contact" : {"email" : "teppo@outlearn.com"},
+"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg"
 }
 -->
 
@@ -22,6 +23,8 @@
 If you are viewing this on GitHub and want to get the full experience, check out [Publishing Great Learning Content](https://pilot.outlearn.com/learn/outlearn/outlearn-publishing) on Outlearn.
 
 ### Join With GitHub
+
+Outlearn imports your content straight from GitHub. If you are new to GitHub, their official desktop clients get you on your way quickly. To install the clients and learn the basics, check out the Getting Started guides for [Mac](https://mac.github.com/help.html) or [Windows](https://windows.github.com/help.html) users.
 
 You can unleash the power of publishing on Outlearn by joining with your GitHub account. [Click here to create an Outlearn account](https://pilot.outlearn.com/auth/join). Click "Join With GitHub" so that Outlearn can access and publish your content. GitHub will ask for your permission using a popup like the one below.
 
