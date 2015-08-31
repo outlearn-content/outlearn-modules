@@ -138,7 +138,7 @@ Now go back to the [Import Content](https://pilot.outlearn.com/import/github) se
 
 > **Note**: don't forget to push your committed changes to GitHub before re-importing to Outlearn.  And if you selected the `autoimport` option for this Content Source, you can just refresh the Page and you'll see change momentarily without manually re-importing.
 
-Now you know how to get a "Hello World" Path up in less than 5-minutes. Hopefully you've seen enough of the power of Outlearn Paths to keep reading the rest of this Module to put some real content into your Path.
+Now you know how to get a "Hello World" Path up in less than 5 minutes. Hopefully you've seen enough of the power of Outlearn Paths to keep reading the rest of this Module to put some real content into your Path.
 
 <!-- @section -->
 
@@ -188,6 +188,16 @@ Outlearn supports the regular Markdown syntax for including images.
 ```
 
 You can add videos with the following annotations:
+
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nb">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
+
+<span class="nb">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
 
 ```markdown
 < !-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" -->
