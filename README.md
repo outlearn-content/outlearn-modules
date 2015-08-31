@@ -214,17 +214,21 @@ The simplest way to enrich your content is to divide it into sections. Each Modu
 
 You create a section by adding the following annotation:
 
-```markdown
-< !-- @section, "title": "Getting started" -->
-```
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @section, "title": "Getting started" --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
 
 Alternatively, you can leave out the "title" attribute and the platform will take the first heading after the section tag and make it the title. So you could replace the above code with:
 
-```markdown
-< !-- @section -->
 
-## Getting Started
-```
+
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @section --&gt;</span>
+
+<span class="nv">## Getting Started</span>
+</pre></td></tr></tbody></table>
+</div>
 
 This can be especially helpful when you just want to add sections quickly to an existing Markdown file and it also makes the file render more nicely on GitHub.
 
