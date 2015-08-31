@@ -191,19 +191,15 @@ You can add videos with the following annotations:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nb">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
+3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
 
-<span class="nb">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
+<span class="nv">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
 
 
-```markdown
-< !-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" -->
 
-< !-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
-```
 
 
 <!-- @section -->
