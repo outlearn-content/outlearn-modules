@@ -277,8 +277,7 @@ In OLM, we can define multiple choice questions by putting them between a `@mult
 9
 10
 11
-12
-13</pre></td><td class="code"><pre><span class="err">&lt;</span>!-- @multipleChoice --&gt;
+12</pre></td><td class="code"><pre>&lt;!-- @multipleChoice --&gt;
 
 What is Node.js?
 <span class="p">
@@ -288,8 +287,7 @@ What is Node.js?
 
 Remember that Node.js is more powerful than any individual use that it can be associated with.
 
-<span class="err">&lt;</span>!-- @end --&gt;
-
+&lt;!-- @end --&gt;
 </pre></td></tr></tbody></table>
 </div>
 
