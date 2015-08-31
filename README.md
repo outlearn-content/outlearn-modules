@@ -277,17 +277,17 @@ In OLM, we can define multiple choice questions by putting them between a `@mult
 9
 10
 11
-12</pre></td><td class="code"><pre>&lt;!-- @multipleChoice --&gt;
+12</pre></td><td class="code"><pre><span class="nb">&lt;!-- @multipleChoice --&gt;</span>
 
 What is Node.js?
 <span class="p">
 -</span> <span class="p">[</span><span class="nv"> </span><span class="p">]</span> A package manager for JavaScript packages
 <span class="p">-</span> <span class="p">[</span><span class="nv"> </span><span class="p">]</span> A front-end framework for heavy-traffic web applications
-<span class="p">-</span> <span class="p">[</span><span class="nv">X</span><span class="p">]</span> A platform for scalable network applications
+<span class="p">-</span> <span class="p">[</span><span class="nb">X</span><span class="p">]</span> A platform for scalable network applications
 
 Remember that Node.js is more powerful than any individual use that it can be associated with.
 
-&lt;!-- @end --&gt;
+<span class="nb">&lt;!-- @end --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
