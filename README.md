@@ -241,21 +241,23 @@ You can optionally define deliverables that are to be submitted as part of task 
 
 To add a task:
 
-```markdown
-< !-- @task, "text" : "Run the above code example on your own machine."-->
-```
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @task, "text" : "Run the above code example on your own machine." --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
 
 If you also want to add a task deliverable:
 
-```markdown
-< !-- @task, "hasDeliverable" : true, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request."-->
-```
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @task, "hasDeliverable" : true, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request." --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
 
 For an external link that gets unfurled inside the platform:
 
-```markdown
-< !-- @link, "url" : "https://nodejs.org/", "text": "Install NodeJS" -->
-```
+
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @link, "url" : "https://nodejs.org/", "text": "Install NodeJS" --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
 
 
 ### Add Multiple Choice Exercises
@@ -264,21 +266,33 @@ Simple multiple choice exercises include three components.  The _question_ (and 
 
 In OLM, we can define multiple choice questions by putting them between a `@multipleChoice` and an `@end` annotation.
 
-```markdown
-
-< !-- @multipleChoice -->
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="code"><pre><span class="err">&lt;</span>!-- @multipleChoice --&gt;
 
 What is Node.js?
-
-- [ ] A package manager for JavaScript packages
-- [ ] A front-end framework for heavy-traffic web applications
-- [X] A platform for scalable network applications
+<span class="p">
+-</span> <span class="p">[</span><span class="nv"> </span><span class="p">]</span> A package manager for JavaScript packages
+<span class="p">-</span> <span class="p">[</span><span class="nv"> </span><span class="p">]</span> A front-end framework for heavy-traffic web applications
+<span class="p">-</span> <span class="p">[</span><span class="nv">X</span><span class="p">]</span> A platform for scalable network applications
 
 Remember that Node.js is more powerful than any individual use that it can be associated with.
 
-< !-- @end -->
+<span class="err">&lt;</span>!-- @end --&gt;
 
-```
+</pre></td></tr></tbody></table>
+</div>
+
 
 Use `- [ ]` to start an incorrect answer, and `- [X]` to start a correct answer.
 The markdown above the answers is treated as the question, and the markdown below the answers
