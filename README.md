@@ -19,17 +19,17 @@
 
 ### Viewing This on GitHub?
 
-If you are viewing this on GitHub and want to get the full experience, check out [Publishing Great Learning Content](https://pilot.outlearn.com/learn/outlearn/outlearn-publishing) on Outlearn.
+If you are viewing this on GitHub and want to get the full experience, check out [Publishing Great Learning Content](https://www.outlearn.com/learn/outlearn/outlearn-publishing) on Outlearn.
 
 ### Join With GitHub
 
 Outlearn imports your content straight from GitHub. If you are new to GitHub, their official desktop clients get you on your way quickly. To install the clients and learn the basics, check out the Getting Started guides for [Mac](https://mac.github.com/help.html) or [Windows](https://windows.github.com/help.html) users.
 
-You can unleash the power of publishing on Outlearn by joining with your GitHub account. [Click here to create an Outlearn account](https://pilot.outlearn.com/auth/join). Click "Join With GitHub" so that Outlearn can access and publish your content. GitHub will ask for your permission using a popup like the one below.
+You can unleash the power of publishing on Outlearn by joining with your GitHub account. [Click here to create an Outlearn account](https://www.outlearn.com/auth/join). Click "Join With GitHub" so that Outlearn can access and publish your content. GitHub will ask for your permission using a popup like the one below.
 
 ![GitHub sign-in popup](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/authorize.png)
 
-If you have already signed up, you can [go to settings](https://pilot.outlearn.com/settings) and Link GitHub with your Outlearn account.
+If you have already signed up, you can [go to settings](https://www.outlearn.com/settings) and Link GitHub with your Outlearn account.
 
 <!-- @task, "text" : "Create an Outlearn account and then mark this task as completed."-->
 
@@ -92,7 +92,7 @@ The relevant part of your file should now look like this:
 
 The best way for you to test Path creation is to see your changes in real time on Outlearn. This section will show you how to do that.
 
-Click on the user icon in the top right corner and choose [My Content](https://pilot.outlearn.com/my-content).
+Click on the user icon in the top right corner and choose [My Content](https://www.outlearn.com/my-content).
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import.png)
 
@@ -134,7 +134,7 @@ We wanted to have an authoring experience that integrates seamlessly with GitHub
 
 By now you are probably itching to get to publish something you actually wrote. Go ahead and edit the file `welcome.md` in the `pages` directory. You can replace everything there with your very own "Hello World" message, or something else that inspires you! The Pages are written in Markdown so feel free to try out some formatting as well.
 
-Now go back to the [Import Content](https://pilot.outlearn.com/import/github) section on Outlearn, click on the nickname and then click "Re-Import". If you still have your Path open, refresh your browser and you can see your edits. Or navigate to it same way as above. Houston, we have a lift-off!
+Now go back to the [Import Content](https://www.outlearn.com/import/github) section on Outlearn, click on the nickname and then click "Re-Import". If you still have your Path open, refresh your browser and you can see your edits. Or navigate to it same way as above. Houston, we have a lift-off!
 
 > **Note**: don't forget to push your committed changes to GitHub before re-importing to Outlearn.  And if you selected the `autoimport` option for this Content Source, you can just refresh the Page and you'll see change momentarily without manually re-importing.
 

@@ -85,4 +85,4 @@ Remember that two matrices can be added if they have the same number of rows and
 <!-- @end -->
 
 
-If you need more details on how to author, please visit the [Outlearn Publishing Guide](https://pilot.outlearn.com/learn/outlearn/outlearn-publishing), where you'll find more examples along with the full specification for the format used by this sample module.
+If you need more details on how to author, please visit the [Outlearn Publishing Guide](https://www.outlearn.com/learn/outlearn/outlearn-publishing), where you'll find more examples along with the full specification for the format used by this sample module.
