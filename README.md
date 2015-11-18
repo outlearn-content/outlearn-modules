@@ -4,7 +4,6 @@
 "version" : "0.1",
 "title" : "Outlearn Hello World",
 "description" : "Get Started with Your Path in 5 Minutes",
-"homepage" : "https://github.com/outlearn-content/outlearn-modules",
 "freshnessDate" : 2015-07-08,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
