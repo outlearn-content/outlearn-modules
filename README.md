@@ -7,8 +7,7 @@
 "freshnessDate" : 2015-07-08,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
-"contact" : {"email" : "teppo@outlearn.com"},
-"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg"
+"contact" : {"email" : "teppo@outlearn.com"}
 }
 -->
 
@@ -132,14 +131,14 @@ We wanted to have an authoring experience that integrates seamlessly with GitHub
 
 By now you are probably itching to get to publish something you actually wrote. Go ahead and edit the file `welcome.md` in the `pages` directory. You can replace everything there with your very own "Hello World" message, or something else that inspires you! The Pages are written in Markdown so feel free to try out some formatting as well.
 
-Now go back to the [Import Content](https://www.outlearn.com/import/github) section on Outlearn, click on the nickname and re-import the content with blue double-arrow. If you set the content source for manual import, click on the green check mark and then preview the Path. If everything looks good, publish it to the world. Houston, we have a lift-off!
+Now go back to the [Import Content](https://www.outlearn.com/import/github) section on Outlearn, click on the nickname and re-import the content with the blue double-arrow. If you set the content source for manual import, click on the green check mark and then preview the Path. If everything looks good, publish it to the world. Houston, we have a lift-off!
 
-![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/preview.png)
+![Preview changes](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/preview.png)
 
 
 > **Note**: Don't forget to push your committed changes to GitHub before re-importing to Outlearn.  And if you selected the `auto import` option for this Content Source, you can just refresh the Page and you'll see change momentarily without manually re-importing.
 
-Now you know how to get a "Hello World" Path up in less than 5 minutes. Hopefully you've seen enough of the power of Outlearn Paths to keep reading the rest of this Module to put some real content into your Path.
+Now you know how to get a "Hello World" Path up in less than 5 minutes. Hopefully you've seen enough of the power of Outlearn Paths to keep reading the rest of this Module and to put some real content into your Path.
 
 <!-- @section -->
 
@@ -211,7 +210,7 @@ Outlearn provides a number of annotations in Markdown that act like magic dust. 
 
 ### Adding Sections
 
-The simplest way to enrich your content is to divide it into sections. Each Module can have one or more sections. A list of sections shows up on tge right side of the content and serves as a navigable table of contents. Sections can also be checked off as completed in order to help learners and Path creators to keep track of progress.
+The simplest way to enrich your content is to divide it into sections. Each Module can have one or more sections. A list of sections shows up on the right side of the content and serves as a navigable table of contents. Sections can also be checked off as completed in order to help learners and Path creators to keep track of progress.
 
 You create a section by adding the following annotation:
 
@@ -234,11 +233,13 @@ Alternatively, you can leave out the "title" attribute and the platform will tak
 This can be especially helpful when you just want to add sections quickly to an existing Markdown file and it also makes the file render more nicely on GitHub.
 
 
-### Add Tasks, Links
+### Add Tasks
 
-Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice. The easiest way to create meaningful interactions with the learners on Outlearn is to add tasks, some of which may contain deliverables. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
+Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice.
 
-You can optionally define deliverables that are to be submitted as part of task completion. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then paste the the pull request URL below." Path authors and organization admins can see which tasks have been done and the contents of the deliverables that learners have submitted. They can then organize further activities such as code reviews.
+The easiest way to create meaningful interactions with the learners on Outlearn is to add tasks, some of which may contain deliverables. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
+
+You can optionally define deliverables that are to be submitted as part of task completion. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then submit the the pull request URL." Path authors and organization admins can see which tasks have been completed as well as the contents of the deliverables that learners have submitted. They can then organize further activities such as code reviews.
 
 To add a task:
 
@@ -252,13 +253,15 @@ If you also want to add a task deliverable:
 </pre></td></tr></tbody></table>
 </div>
 
+### Links
 
-For an external link that gets unfurled inside the platform:
+There are lots of great resources out there on the web. If you want to draw more attention to an external link and create a task that goes with the link, use the syntax below. The `text` field content will become a checkbox for learners to complete.
 
-
-<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @link, "url" : "https://nodejs.org/", "text": "Install NodeJS" --&gt;</span>
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @link, "url" : "https://nodejs.org/", "text": "Install Node.js for your operating system." --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
+
+![Link with task](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/link.png)
 
 
 ### Add Multiple Choice Exercises
@@ -311,13 +314,7 @@ Remember that Node.js is more powerful than any individual use that it can be as
 
 <!-- @end -->
 
-### Add Cover Images
 
-Each Module in the Path can have a cover image that's a visual representation of the Path or Module.  Really it's just there to make your content stand out as more attractive, we'll provide a default pattern if you don't add a custom image. You add them in the header with a line:
-
-```markdown
-"coverImage" : "https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/lights.jpg",
-```
 
 <!-- @section, "title": "Wrapping Up" -->
 
