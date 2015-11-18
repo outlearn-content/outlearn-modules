@@ -22,13 +22,13 @@ If you are viewing this on GitHub and want to get the full experience, check out
 
 ### Join With GitHub
 
-Outlearn imports your content straight from GitHub. If you are new to GitHub, their official desktop clients get you on your way quickly. To install the clients and learn the basics, check out the Getting Started guides for [Mac](https://mac.github.com/help.html) or [Windows](https://windows.github.com/help.html) users.
+Outlearn imports your content straight from GitHub. If you are new to GitHub, check out their Getting Started guides for [Mac](https://mac.github.com/help.html) and [Windows](https://windows.github.com/help.html) users.
 
-You can unleash the power of publishing on Outlearn by joining with your GitHub account. [Click here to create an Outlearn account](https://www.outlearn.com/auth/join). Click "Join With GitHub" so that Outlearn can access and publish your content. GitHub will ask for your permission using a popup like the one below.
+You can unleash the full power of publishing by [joining Outlearn](https://www.outlearn.com/auth/join) with your GitHub account. Choose "Join With GitHub" and GitHub will confirm that you want to let Outlearn publish content from your repos.
 
 ![GitHub sign-in popup](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/authorize.png)
 
-If you have already signed up, you can [go to settings](https://www.outlearn.com/settings) and Link GitHub with your Outlearn account.
+If you have already signed up, you can [go to settings](https://www.outlearn.com/settings) and link GitHub with your Outlearn account.
 
 <!-- @task, "text" : "Create an Outlearn account and then mark this task as completed."-->
 
@@ -37,7 +37,7 @@ If you have already signed up, you can [go to settings](https://www.outlearn.com
 
 ## Duplicate and Edit the Template Repo
 
-We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) GitHub repository. Your first step is to duplicate this repo. If you are just trying things out and don't mind having your repo public, you can [fork](https://guides.github.com/activities/forking/) outlearn-modules. In that case, you can skip the steps in the code block below.
+We know you are busy and would rather focus on writing awesome content than setting up directory structures and choosing naming conventions. Never worry, you'll be all set with our [outlearn-modules](https://github.com/outlearn-content/outlearn-modules) repository. Your first step is to duplicate this repo. If you are just trying things out and don't mind having your repo public, you can [fork](https://guides.github.com/activities/forking/) outlearn-modules. In that case, you can skip the steps in the code block below.
 
 If you want to use a private repo or want to change the repo name, [create a new repo](https://help.github.com/articles/creating-a-new-repository/) where you want to copy the contents of the template. Next, you need to perform a bare-clone and a mirror-push. The instructions below assume you have created a new repo called `exampleuser/new-repository` and want to use an ssh connection. You can also [connect using https](https://help.github.com/articles/duplicating-a-repository/). To bare-clone using ssh, type these commands at the command line:
 
@@ -62,8 +62,8 @@ Once you have duplicated the repository, open up `outlearn.json` found at the ro
 | Field | Description                                            |
 | ----- | ------------------------------------------------------ |
 | name  | used for the database, must be unique for your user account or organization |
-| title | shown at the top of Path cards                         |
-| description | shown on the Path card as additional information |
+| title | visible on the website for learners                    |
+| description | more info about your path for learners           |
 
 The relevant part of your file should now look like this:
 
@@ -91,24 +91,23 @@ The relevant part of your file should now look like this:
 
 The best way for you to test Path creation is to see your changes in real time on Outlearn. This section will show you how to do that.
 
-Click on the user icon in the top right corner and choose [My Content](https://www.outlearn.com/my-content).
+Click on the user icon in the top right corner and choose [Import Content](https://www.outlearn.com/import/github).
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import.png)
 
-Click Add Content Source and choose your newly created repo. You can choose Auto Import if you want all the changes in GitHub to be automatically reflected on Outlearn. If you would rather push new changes to Outlearn manually, choose Manual Import. You can modify the default nickname if you want to and import the repository.
+Click "Add Content Source" and choose your newly created repo. You can choose Auto Import if you want all the changes in GitHub to be automatically reflected on Outlearn. If you would rather push new changes to Outlearn manually, choose Manual Import. You can modify the default nickname if you want to and import the repository.
 
 ![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/choose-repo.png)
 
 <!-- @task, "text" : "Import your repository."-->
 
-You should now see the nickname of your content source
-in the Content Sources section on the right hand side of the screen. Click on the name,
-then click on the green check on next to the latest import. You
+You should now see the content source on the screen. Click on the content source,
+then click on the green check. You
 will see the imported Paths and Modules. Now click on the
 Path and you will see your very first Outlearn Path in all its glory.
 Congratulations!
 
-![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import-history.png)
+![GitHub import history](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/import-history.png)
 
 
 
@@ -120,9 +119,9 @@ Congratulations!
 
 Now that you've laid out what your Path is all about, it's time to get some content in it. Paths are made up of two basic components: _Pages_ and _Modules_. The Modules are the building blocks of a Path. You might write them all yourself or you can include Modules written by others.
 
-An ideal Module provides good stand-alone learning value, making it a good candidate to be reused effectively in many Paths. As you create your Module, we recommend that you avoid referencing other Modules within the Module content. If you do so, you run the risk of confusing learners who might find themselves in a learning Path that does not includes the referenced Module.
+An ideal Module provides good stand-alone learning value, making it a good candidate to be reused in many Paths. As you create your Module, we recommend that you avoid referencing other Modules within the Module content. If you do so, you run the risk of confusing learners who might see the Module in another learning Path that does not includes the referenced Module.
 
-To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality as a curator of modules created by others and they add context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and relate the content to concepts your specific audience already understands. Use pages whenever a little expert context and commentary might be helpful.
+To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality as a curator of Modules created by others and they add context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and how they relate to concepts your specific audience already understands. Use pages whenever a little expert context and commentary might be helpful.
 
 
 ### Outlearn Uses Markdown
@@ -133,9 +132,12 @@ We wanted to have an authoring experience that integrates seamlessly with GitHub
 
 By now you are probably itching to get to publish something you actually wrote. Go ahead and edit the file `welcome.md` in the `pages` directory. You can replace everything there with your very own "Hello World" message, or something else that inspires you! The Pages are written in Markdown so feel free to try out some formatting as well.
 
-Now go back to the [Import Content](https://www.outlearn.com/import/github) section on Outlearn, click on the nickname and then click "Re-Import". If you still have your Path open, refresh your browser and you can see your edits. Or navigate to it same way as above. Houston, we have a lift-off!
+Now go back to the [Import Content](https://www.outlearn.com/import/github) section on Outlearn, click on the nickname and re-import the content with blue double-arrow. If you set the content source for manual import, click on the green check mark and then preview the Path. If everything looks good, publish it to the world. Houston, we have a lift-off!
 
-> **Note**: don't forget to push your committed changes to GitHub before re-importing to Outlearn.  And if you selected the `autoimport` option for this Content Source, you can just refresh the Page and you'll see change momentarily without manually re-importing.
+![GitHub import](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/preview.png)
+
+
+> **Note**: Don't forget to push your committed changes to GitHub before re-importing to Outlearn.  And if you selected the `auto import` option for this Content Source, you can just refresh the Page and you'll see change momentarily without manually re-importing.
 
 Now you know how to get a "Hello World" Path up in less than 5 minutes. Hopefully you've seen enough of the power of Outlearn Paths to keep reading the rest of this Module to put some real content into your Path.
 
