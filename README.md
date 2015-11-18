@@ -179,7 +179,7 @@ The body of your `outlearn.json` will now look like this:
 
 <!-- @task, "text" : "Add your first Module into the Path."-->
 
-### Including Images and Videos
+### Include Images and Videos
 
 Outlearn supports the regular Markdown syntax for including images.
 
@@ -208,7 +208,7 @@ You can add videos with the following annotations:
 
 Outlearn provides a number of annotations in Markdown that act like magic dust.  When you include them, we can create a more interactive and trackable experience for your content.  These annotations are all HTML comments, which means they degrade gracefully when you content is rendered elsewhere (like in a GitHub README.md file).
 
-### Adding Sections
+### Add Sections
 
 The simplest way to enrich your content is to divide it into sections. Each Module can have one or more sections. A list of sections shows up on the right side of the content and serves as a navigable table of contents. Sections can also be checked off as completed in order to help learners and Path creators to keep track of progress.
 
@@ -253,7 +253,7 @@ If you also want to add a task deliverable:
 </pre></td></tr></tbody></table>
 </div>
 
-### Links
+### Add Links
 
 There are lots of great resources out there on the web. If you want to draw more attention to an external link and create a task that goes with the link, use the syntax below. The `text` field content will become a checkbox for learners to complete.
 
