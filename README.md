@@ -179,28 +179,13 @@ The body of your `outlearn.json` will now look like this:
 
 <!-- @task, "text" : "Add your first Module into the Path."-->
 
-### Include Images and Videos
+### Include Images
 
 Outlearn supports the regular Markdown syntax for including images.
 
 ```markdown
 ![sea](https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/sea.jpg)
 ```
-
-You can add videos with the following annotations:
-
-<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @resource, "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
-
-<span class="nv">&lt;!-- @resource, "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-
-
-
-
-
 
 <!-- @section -->
 
@@ -255,9 +240,9 @@ To add an Open Response:
 </pre></td></tr></tbody></table>
 </div>
 
-### Add Rich Links
+### Add Resources
 
-There are lots of great resources out there on the web. If you want to draw more attention to an external link,  you can use the same syntax as for videos:
+There are lots of great resources out there on the web. If you want to draw more attention to an external link,  you can use the following syntax:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @resource, "url" : "https://nodejs.org/" --&gt;</span>
 </pre></td></tr></tbody></table>
@@ -265,6 +250,15 @@ There are lots of great resources out there on the web. If you want to draw more
 
 ![Link with Screenshot task](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/link.png)
 
+The same syntax works also for embedding content such as videos:
+
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @resource, "url": "https://vimeo.com/67325705" --&gt;</span>
+
+<span class="nv">&lt;!-- @resource, "url": "https://www.youtube.com/watch?v=CmjeCchGRQo" --&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
 
 ### Add Multiple Choice Exercises
 
