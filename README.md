@@ -120,7 +120,7 @@ Now that you've laid out what your Path is all about, it's time to get some cont
 
 An ideal Module provides good stand-alone learning value, making it a good candidate to be reused in many Paths. As you create your Module, we recommend that you avoid referencing other Modules within the Module content. If you do so, you run the risk of confusing learners who might see the Module in another learning Path that does not includes the referenced Module.
 
-To help make sense of the Modules in your Path, you can put in Context Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality as a curator of Modules created by others and they add context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and how they relate to concepts your specific audience already understands. Use pages whenever a little expert context and commentary might be helpful.
+To help make sense of the Modules in your Path, you can put in Guide Pages (aka "Path Pages", or just "Pages"). Pages are the glue that holds the Modules together. They let you add in more of your own personality as a curator of Modules created by others and they add context for the surrounding Modules. Pages are specific to a Path so you can talk about why you chose the Modules you did, how they fit together, what parts are super important, and how they relate to concepts your specific audience already understands. Use pages whenever a little expert context and commentary might be helpful.
 
 
 ### Outlearn Uses Markdown
@@ -191,9 +191,9 @@ You can add videos with the following annotations:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
+3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @resource, "url": "https://player.vimeo.com/video/67325705" --&gt;</span>
 
-<span class="nv">&lt;!-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
+<span class="nv">&lt;!-- @resource, "url": "https://www.youtube.com/embed/CmjeCchGRQo" --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
@@ -233,35 +233,37 @@ Alternatively, you can leave out the "title" attribute and the platform will tak
 This can be especially helpful when you just want to add sections quickly to an existing Markdown file and it also makes the file render more nicely on GitHub.
 
 
-### Add Tasks
+### Add Tasks and Open Responses
 
 Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice.
 
-The easiest way to create meaningful interactions with the learners on Outlearn is to add tasks, some of which may contain deliverables. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
+The easiest way to create meaningful interactions with the learners on Outlearn is to add Tasks. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
 
-You can optionally define deliverables that are to be submitted as part of task completion. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then submit the the pull request URL." Path authors and organization admins can see which tasks have been completed as well as the contents of the deliverables that learners have submitted. They can then organize further activities such as code reviews.
+Another great way to engage the learners is to ask for an Open Response. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then submit the the pull request URL."
 
-To add a task:
+Path authors and organization admins can see which Tasks have been completed and the content of the Open Responses that have been submitted. They can then organize further activities such as code reviews.
+
+To add a Task:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @task, "text" : "Run the above code example on your own machine." --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
-If you also want to add a task deliverable:
+To add an Open Response:
 
-<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @task, "hasDeliverable" : true, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request." --&gt;</span>
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @openResponse, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request." --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
-### Add Links
+### Add Rich Links
 
-There are lots of great resources out there on the web. If you want to draw more attention to an external link and create a task that goes with the link, use the syntax below. The `text` field content will become a checkbox for learners to complete.
+There are lots of great resources out there on the web. If you want to draw more attention to an external link,  you can use the same syntax as for videos:
 
-<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @link, "url" : "https://nodejs.org/", "text": "Install Node.js for your operating system." --&gt;</span>
+<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @resource, "url" : "https://nodejs.org/" --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
-![Link with task](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/link.png)
+![Link with Screenshot task](https://raw.githubusercontent.com/outlearn-content/outlearn-publishing/master/images/link.png)
 
 
 ### Add Multiple Choice Exercises
