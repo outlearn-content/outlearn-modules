@@ -1,10 +1,10 @@
 <!--
 {
 "name": "readme",
-"version" : "0.1",
+"version" : "0.2",
 "title" : "Outlearn Hello World",
 "description" : "Get Started with Your Path in 5 Minutes",
-"freshnessDate" : 2015-07-08,
+"freshnessDate" : 2016-03-11,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
 "contact" : {"email" : "teppo@outlearn.com"}
