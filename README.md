@@ -3,7 +3,6 @@
 "name": "readme",
 "version" : "0.2",
 "title" : "Outlearn Hello World",
-"description" : "Get Started with Your Path in 5 Minutes",
 "freshnessDate" : 2016-03-11,
 "author" : "Teppo Jouttenus",
 "license" : "CC BY 4.0",
