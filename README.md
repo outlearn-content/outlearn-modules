@@ -199,14 +199,6 @@ The simplest way to enrich your content is to divide it into sections. Each Modu
 
 You create a section by adding the following annotation:
 
-<div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @section, "title": "Getting started" --&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-
-Alternatively, you can leave out the "title" attribute and the platform will take the first heading after the section tag and make it the title. So you could replace the above code with:
-
-
-
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3</pre></td><td class="code"><pre><span class="nv">&lt;!-- @section --&gt;</span>
@@ -215,30 +207,26 @@ Alternatively, you can leave out the "title" attribute and the platform will tak
 </pre></td></tr></tbody></table>
 </div>
 
-This can be especially helpful when you just want to add sections quickly to an existing Markdown file and it also makes the file render more nicely on GitHub.
-
+The platform will take the first heading after the section tag and make it the title.
 
 ### Add Tasks and Open Responses
 
 Nothing kills learner motivation like hours of reading and watching videos without a way to try it out yourself. Great teachers push the learners to put new knowledge to practice.
 
-The easiest way to create meaningful interactions with the learners on Outlearn is to add Tasks. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system."
-
-Another great way to engage the learners is to ask for an Open Response. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then submit the the pull request URL."
-
-Path authors and organization admins can see which Tasks have been completed and the content of the Open Responses that have been submitted. They can then organize further activities such as code reviews.
-
-To add a Task:
+The easiest way to create meaningful interactions with the learners on Outlearn is to add Tasks. A task can be as simple as "Run `make` in your project directory" or more involved such as "Download the library and compile it in your system." To add a Task:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @task, "text" : "Run the above code example on your own machine." --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
 
-To add an Open Response:
+Another great way to engage the learners is to ask for an Open Response. For example, you can ask learners to "Fork the project repo on GitHub, add the following functionality, send a pull request to the original repo, then submit the the pull request URL." To add an Open Response:
 
 <div class="highlight markdown"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">&lt;!-- @openResponse, "text" : "Fork the repository above, fix the broken test, and submit a URL for your pull-request." --&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
+
+Path authors and organization admins can see which Tasks have been completed and the content of the Open Responses that have been submitted. They can then organize further activities such as code reviews.
+
 
 ### Add Resources
 
