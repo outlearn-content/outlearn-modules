@@ -3,7 +3,6 @@
 "name": "my-outlearn-module",
 "version" : "0.1",
 "title" : "My Outlearn Module",
-"description" : "This module will grow to be the best module ever",
 "homepage" : "https://github.com/outlearn-content/outlearn-modules",
 "freshnessDate" : 2015-07-08,
 "license" : "CC BY 4.0"
@@ -20,7 +19,7 @@ This is a placeholder Learning Module for you to customize.  Look in the `my-out
 
 You may have already used Markdown. It's an awesome format for technical publishing. If you need a refresher, GitHub has a great overview.
 
-<!-- @link, "url" : "https://help.github.com/articles/markdown-basics/", "text": "I know enough about Markdown." -->
+<!-- @resource, "url" : "https://help.github.com/articles/markdown-basics/" -->
 
 GitHub-flavored markdown will work just fine, and you can preview your files in your favorite text editor or Markdown preview tool before uploading them to Outlearn for final proof-reading.
 
@@ -38,13 +37,13 @@ You can include images using Markdown syntax.
 ![sea](https://raw.githubusercontent.com/outlearn-content/outlearn-modules/master/assets/sea.jpg)
 
 
-You can embed hosted videos in your paths using Outlearn @asset syntax. Here is a Vimeo video:
+You can embed hosted videos in your paths using Outlearn @resource syntax. Here is a Vimeo video:
 
-<!-- @asset, "contentType": "outlearn/video", "provider": "vimeo", "url": "https://player.vimeo.com/video/67325705" -->
+<!-- @resource, "url": "https://player.vimeo.com/video/67325705" -->
 
 And here is another one form YouTube:
 
-<!-- @asset, "contentType": "outlearn/video", "provider": "youtube", "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
+<!-- @resource, "url": "https://www.youtube.com/embed/CmjeCchGRQo" -->
 
 <!-- @section -->
 
@@ -68,7 +67,7 @@ If you want to get your audience to practice what you preach, give them a task.
 
 And if they are making something worth sharing, why not let them share it with you?
 
-<!-- @task, "hasDeliverable" : true, "text" : "Write and submit a haiku about your favorite compiler."-->
+<!-- @openResponse, "text" : "Write and submit a haiku about your favorite compiler."-->
 
 Then go ahead and test how much they know.
 

@@ -17,13 +17,5 @@
 
   "modules" : [
     {"olm" : "./modules/my-outlearn-module.md"}
-  ],
-
-  "assets" : [
-    {
-      "name" : "stream",
-      "contentType" : "image/jpeg",
-      "location" : "assets/stream.jpg"
-    }
   ]
 }
