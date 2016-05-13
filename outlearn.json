@@ -3,9 +3,9 @@
 
   "paths" : [
     {
-      "name" : "my-outlearn-path",
-      "title" : "My First Outlearn Path",
-      "description" : "Fastest Way to Publish a Path",
+      "name" : “red5-pro-test”,
+      "title" : “Red5 Pro Test Path",
+      "description" : "Red5 Pro Outlearn Test Path of AWESOMENESS”,
       "privacy" : "public",
       "pages" : [
         {"page" : "./pages/welcome.md"},
